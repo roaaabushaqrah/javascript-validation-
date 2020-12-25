@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
+    <title>Validation</title>
+    <link rel="stylesheet" href="form.css"> </head>
+
+<body>
+
+    <h1>
+        Register Form
+    </h1>
+    <div id="error" class="form control">
+        <form onsubmit="return validation()" method="GET" action="" class="container" id="form">
+
+            <span class="txt"> Your Name:<input type="text"  name=" name"id="firstname"class="item">
+            </span>
+            <div id="fname_err"></div>
+            <span class="txt"> Your Email:<input type="email"  id="email" name="email"class="item" required></span>
+            <div id="email_err"></div>
+            <span class="txt"> Your Phone:<input type="text"  id="phoneno"name="phone" class="item" required></span>
+            <div id="phoneno_err"></div>
+            <span class="txt"> Your password: <input type="password" id="pass" name="pass" class="item" required></span>
+            <div id="pass_err"></div>
+            <span class="txt"> Confirmation password:<input type="password"   id="confirmedpass" name="cpass"class="item" required> </span>
+            <div id="confirmedpass_err"></div>
+            <button id="bt1" value="submit" type="submit">Register</button> </form>
+    </div>
+</body>
+
+<script src="form.js">
+</script>
+
+</html>
